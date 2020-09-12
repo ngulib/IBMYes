@@ -23,7 +23,7 @@ jobs:
         IBM_ACCOUNT: ${{ secrets.IBM_ACCOUNT2 }}
         REGION_NUM: ${{ secrets.REGION_NUM2 }}
       run: |
-        ./IBM_Cloud_CLI/ibmcloud login <<EOF
+       # ./IBM_Cloud_CLI/ibmcloud login <<EOF
         $IBM_ACCOUNT
         $REGION_NUM
         no
@@ -40,5 +40,5 @@ jobs:
       env:
         IBM_APP_NAME: ${{ secrets.IBM_APP_NAME2 }}
       run: |
-        ./IBM_Cloud_CLI/ibmcloud cf restart "$IBM_APP_NAME"
+       # ./IBM_Cloud_CLI/ibmcloud cf restart "$IBM_APP_NAME"
 
